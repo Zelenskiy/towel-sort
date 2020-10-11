@@ -3,6 +3,7 @@ function towelSort (matrix) {
     let d = 1;
     for (let r=0; r<matrix.length; r++){
       let dl = matrix[r].length;
+      console.log("dl=",dl);
       for (let c=0; c < matrix[r].length; c++){
           if (d > 0){
             m.push(matrix[r][c]);
@@ -16,12 +17,11 @@ function towelSort (matrix) {
   }
 
   const matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
+    
   ];
 
 let cc = towelSort(matrix);
+console.log(cc);
 for (let r=0; r<cc.length; r++){
    console.log(cc[r]);
 }
